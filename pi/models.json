@@ -1,0 +1,38 @@
+{
+  "providers": {
+    "local-vllm": {
+      "name": "Local vLLM (GB10)",
+      "baseUrl": "http://127.0.0.1:8000/v1",
+      "api": "openai-completions",
+      "apiKey": "local",
+      "compat": {
+        "supportsDeveloperRole": false,
+        "supportsReasoningEffort": false,
+        "supportsStore": false,
+        "maxTokensField": "max_tokens",
+        "thinkingFormat": "qwen-chat-template",
+        "supportsUsageInStreaming": true,
+        "supportsStrictMode": false,
+        "supportsOpenAIGrammarTools": false
+      },
+      "models": [
+        {
+          "id": "Qwen/Qwen3.8-27B",
+          "name": "Qwen3.8 27B NVFP4 (local)",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 262144,
+          "maxTokens": 32768,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          }
+        }
+      ]
+    }
+  }
+}

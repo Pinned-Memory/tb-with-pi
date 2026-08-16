@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Captured pi traffic + replay output (regenerate with PI_CAPTURE_DIR / --ak capture=true)
+captures/
+traces/captures/
+bench/results/
+*.jsonl
+
+# Backend / dashboard runtime artifacts
+*.log
+nohup.out
+
+# Editor + OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
